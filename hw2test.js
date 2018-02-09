@@ -1,14 +1,3 @@
-// To execute this code, be sure you're in the right directory;
-// (Mac)       cd ~/code/hw2
-// (Windows)   cd c:\code\hw2
-// Then type:
-// node hw2.js
-
-// HOMEWORK 2
-
-// Cryptocurrency is all the rage. You have decided to create your own,
-// KelloggCoin, that will massively disrupt financial markets at the Global
-// Hub.
 
 let blockchain = [
   { fromUser: null, toUser: "brian", amount: 21000 },
@@ -29,6 +18,37 @@ let blockchain = [
 // more advanced array functions, and by all means, experiment with this, but
 // get it done using just the basics first.
 
+// To get to the name I go over blockchain[i].toUser     console.log(blockchain[0].toUser);
+// let briansum = 0;
+// let getBalance = function(name){
+//
+//   for (let i=0;i<blockchain.length;i++){
+//
+//   if (blockchain[i].toUser===name){
+//   briansum = briansum + blockchain[i].amount
+//
+// } else if (blockchain[i].fromUser===name){
+//   briansum = briansum - blockchain[i].amount
+//
+//   } else{
+//       console.log("pity");
+//   }
+//   }
+//
+//   return briansum;
+// }
+//
+//
+//
+//   console.log(getbalance("brian")briansum);
+  // console.log(getBalance("brian"));
+// It should print out:
+// Brian's KelloggCoin balance is 8000
+// Ben's KelloggCoin balance is 10350
+// Jeff's KelloggCoin balance is 2650
+
+
+
 
 let sum = 0
 let getBalance = function (name){
@@ -46,17 +66,9 @@ let getBalance = function (name){
 
     return sum;
   }
-sum=0;
+
 console.log("Brian's KelloggCoin balance is " + getBalance("brian"));
 sum=0;
 console.log("Ben's KelloggCoin balance is " + getBalance("ben"));
 sum=0;
 console.log("Jeff's KelloggCoin balance is " + getBalance("jeff"));
-// It should print out:
-// Brian's KelloggCoin balance is 8000
-// Ben's KelloggCoin balance is 10350
-// Jeff's KelloggCoin balance is 2650
-
-// console.log("Brian's KelloggCoin balance is " + getBalance("brian"));
-// console.log("Ben's KelloggCoin balance is " + getBalance("ben"));
-// console.log("Jeff's KelloggCoin balance is " + getBalance("jeff"));
