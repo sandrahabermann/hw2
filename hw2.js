@@ -30,8 +30,9 @@ let blockchain = [
 // get it done using just the basics first.
 
 
-let sum = 0
+
 let getBalance = function (name){
+  let sum = 0
   for (let i=0;i<blockchain.length;i++){
 
   if (blockchain[i].toUser===name){
@@ -46,11 +47,8 @@ let getBalance = function (name){
 
     return sum;
   }
-sum=0;
 console.log("Brian's KelloggCoin balance is " + getBalance("brian"));
-sum=0;
 console.log("Ben's KelloggCoin balance is " + getBalance("ben"));
-sum=0;
 console.log("Jeff's KelloggCoin balance is " + getBalance("jeff"));
 // It should print out:
 // Brian's KelloggCoin balance is 8000
